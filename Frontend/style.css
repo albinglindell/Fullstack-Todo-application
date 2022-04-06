@@ -1,0 +1,76 @@
+body{
+    background-image: url("https://img.freepik.com/free-vector/abstract-pastel-memphis-patterned-background_53876-98950.jpg?w=2000");
+    background-size: cover;
+}
+*{
+    font-family: sans-serif;
+    text-align: center;
+}
+.loginDiv, .TodoWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+.loginDiv button, .TodoWrapper button{
+    width: 50%;
+    align-self: center;
+}
+
+.areaDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper .TodoCard{
+    background-color: rgba(255, 255, 0, 0.548);
+}
+.doneWrapper .TodoCard{
+background-color: rgba(30, 202, 30, 0.548);
+}
+.TodoCard{
+    border: 1px solid black;
+    width: max-content;
+    border-radius: 7px;
+    padding: 2%;
+    margin: 2%;
+    backdrop-filter: blur(3px);
+}
+.editWindow{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 255, 0.219);
+    backdrop-filter: blur(7px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    z-index: 10;
+}
+.EditWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.logout, .login{
+    position: absolute;
+    right: 0;
+    margin: 0 5%;
+}
+.login{
+    top: 5vh;
+}
+.registerWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
